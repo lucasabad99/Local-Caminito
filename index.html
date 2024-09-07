@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="shortcut icon" href="./assets/000_334P84K-1024x683.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Mi primer index.html</h1>
+    <h1 class="animate__animated animate__jackInTheBox">Mi primer index.html</h1>
+     <h2 data-aos="zoom-out-left">Hola mundo version boquita</h2>
         <a href="https://www.instagram.com/" target="_blank">instagram</a>
         <h1 class="modificarH1">Sobre nosotros</h1>
+        <div class="transition">     </div>
+        <div class="animacion">  </div>
         <nav>
             <a href="./pages/contacto.html" target="_blank">contacto</a>
             <a href="./pages/galeria.html" target="_blank">Galeria</a>
@@ -129,5 +134,9 @@
             </table>
         </section>
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

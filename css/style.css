@@ -8,62 +8,116 @@
 
 /*TRANSFORMACIONES*/
 a{
-    color: black;
+    background-color: black;
     font-size: 1rem;  
-    transition: color 2s, font-size 4s;
+    transition: background-color 2s, font-size 4s;
 }
 
 a:hover{
-    color:red;
+    background-color:red;
     font-size: 2rem;
 }
 
 .transition{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    transition: widht 3s,height 5s ;
+}
+
+.transition:hover{
+    width: 300px;
+    height: 300px;
+}
+
+.animacion{
+width: 200px;
+height: 200px;
+animation-name: nuestraprimeranimacion;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in;
+animation-duration: 10s;
+animation-delay: 5s;
+
+}
+
+
+@keyframes nuestraprimeranimacion{
+
+0%{
     background-color: red;
 }
+10%{
+    background-color: blue;
+    transform: rotate(10deg);
+}
+20%{
+    background-color: green;
+    transform: skew(20deg,10deg);
+}
+30%{
+    background-color: pink;
+    transform: rotate(50deg);
+}
+40%{
+    background-color: violet;
+}
+50%{
+    background-color: rgb(228, 105, 162);
+    transform: skew(50deg,30deg);
+}
+60%{ 
+    background-color: aquamarine;
+    transform: rotate(90deg);
+}
+100%{
+    background-color: black;
+}
+}
+
 
 
 /**/
 p{
 
     font-family: "roboto", monospace;
-    color: gainsboro;
+    background-color: gainsboro;
 }
 
 
 
 /*selectores por etiqueta*/
 h1 {
-    color: red;
+    background-color: red;
     font-size: 3rem;
 }
 /*selectores por id*/
 /*#headingIndex{
-    color: green;
+    background-color: green;
 }*/
 
 /*selectores por clase*/
 /*.modificarH2{
 
-    color:blueviolet;
+    background-color:blueviolet;
 }*/
 
 /*herenccia y cascada*/
 /*section{
 
-color: blue;
+background-color: blue;
 
  }*/
 
  /*.sectionDiferente{
 
 
-color: pink;
+background-color: pink;
 
  }*/
 
  /*P{
-    color: black;
+    background-color: black;
     font-family: Impact, sans-serif;
     font-size: 15px; 
     font-weight: lighter;
